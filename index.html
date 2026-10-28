@@ -1290,7 +1290,14 @@
   var defenseChallenges=[
     {name:'Back-rank pressure',fen:'6k1/5ppp/8/8/8/6P1/5PKP/3q4 w - - 0 1',target:6,tip:'Create luft for the king and look for perpetual-check ideas.'},
     {name:'Rook invasion',fen:'6k1/5ppp/8/8/8/2P5/5PKP/3r4 w - - 0 1',target:7,tip:'Keep the king near the pawns and challenge the active rook.'},
-    {name:'Queen-side squeeze',fen:'6k1/5ppp/8/8/8/2P5/PP3PPP/2q3K1 w - - 0 1',target:6,tip:'Trade queens if you can; otherwise build a checking net.'}
+    {name:'Queen-side squeeze',fen:'6k1/5ppp/8/8/8/2P5/PPq2PPP/6K1 w - - 0 1',target:6,tip:'Step off the first rank and keep your pawns as a shield.'},
+    {name:'Pawn storm wall',fen:'6k1/pp3ppp/8/8/5ppp/6P1/5PPP/6K1 w - - 0 1',target:6,tip:'Block the storm: keep your pawns together and do not let one through.'},
+    {name:'Opposite bishops',fen:'8/6k1/8/6p1/3b3p/6P1/6KP/5B2 w - - 0 1',target:6,tip:'Opposite bishops draw: keep your pawns on your bishop colour and your king safe.'},
+    {name:'Queen vs rook and bishop',fen:'6k1/5ppp/8/8/3q4/8/PP3PBP/5RK1 w - - 0 1',target:6,tip:'Rook and bishop together: guard the back rank and cover each other.'},
+    {name:'Back-rank luft',fen:'3r2k1/5ppp/8/2q5/8/7P/PPP2PP1/5RK1 w - - 0 1',target:6,tip:'Make luft first, then hold the back rank with the rook.'},
+    {name:'Queen harassment',fen:'6k1/5ppp/8/8/7q/8/PP3PPP/6K1 w - - 0 1',target:6,tip:'Sidestep every check and keep your pawn shield intact.'},
+    {name:'Two rooks barrage',fen:'4r1k1/5ppp/8/8/8/2P5/PP1r1PPP/6K1 w - - 0 1',target:6,tip:'Two rooks on the attack: stay off open files and keep the king moving.'},
+    {name:'Bishop vs rook invade',fen:'6k1/5ppp/8/8/8/8/PP1r1PBP/6K1 w - - 0 1',target:6,tip:'A rook on the second rank: challenge it with the bishop and keep the king tucked away.'}
   ];
   function loadOpeningDatabase(){
     return Promise.resolve(INLINE_OPENINGS).then(function(data){
